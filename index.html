@@ -171,11 +171,16 @@
             fill="#ff7aa2"/>
     </svg>
 
-    <h1>Ayushi will you be my valentine?</h1>
+    <h1>Ayushi will you be my valentine? 💖🥹 </h1>
+    <img
+      src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif"
+      alt="Cute hug"
+      style="width:180px; margin:12px auto; display:block;"
+   />
 
     <section class="button-zone" id="zone">
-      <button id="yesBtn">Yes</button>
-      <button id="noBtn">No</button>
+      <button id="yesBtn">Yes 💕 </button>
+      <button id="noBtn">No 🙄 </button>
     </section>
 
     <!-- HINT -->
@@ -291,12 +296,12 @@
 
     /* ---------- YES CLICK ---------- */
     yesBtn.addEventListener("click", () => {
-      zone.style.display = "none";
-      hint.style.display = "none";     // HIDE THE HINT
-      result.style.display = "block";
-      resizeConfettiCanvas();
       fullScreenConfetti();
-    });
+      setTimeout(() => {
+        window.location.href = "second.html";
+      }, 1200);
+});
+
   </script>
 </body>
 </html>
